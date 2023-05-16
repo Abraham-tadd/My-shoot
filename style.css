@@ -4,7 +4,9 @@ html {
 body {
 
 }
-
+a {
+  text-decoration: none;
+}
 /* .burger {
   border: 1px solid #1b1818;
   margin-left:auto;
