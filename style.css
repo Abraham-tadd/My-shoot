@@ -1,15 +1,19 @@
 html {
-
 }
 body {
+  color: rgb(54, 18, 18);
+  background-color: #f8f7f7;
 
+}
+.divo {
+  background-color: #f8f7f7;
 }
 a {
   text-decoration: none;
 }
-/* .burger {
-  border: 1px solid #1b1818;
-  margin-left:auto;
-  margin-right: 1rem;
-  margin-top: 0.5rem;
-} */
+.bi-instagram {
+  font-size: 7rem;
+}
+.insta {
+  color: rgb(54, 18, 18);
+}

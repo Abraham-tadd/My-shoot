@@ -15,7 +15,7 @@
   <nav class="navbar fixed-top navbar-dark bg-dark">
     <div class="container-fluid">
       <a href="" class="navbar-brand text-danger fw-bolder"> 
-       <i class="bi bi-camera ms-3"></i> Ishoot</a>
+       <i class="bi bi-camera ms-3"></i> My-shoot</a>
        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false">
 <span class="navbar-toggler-icon burger"></span>
        </button>
@@ -31,8 +31,8 @@
 
   <header class="row row-cols-2 vh-100 flex-row align-items-center justify-content-center">
     <div class="col-sm-6 container text-center text-sm-start" style="width: 500px;">
-    <div class="card-header bg-white font-monospace text-secondary">
-      <strong>photographer</strong>
+    <div class="card-header  font-monospace divo text-secondary">
+      <strong class="">photographer</strong>
 
     </div>
     <div class="card-body">
@@ -41,7 +41,10 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ad labore voluptatem! Eligendi, veniam? Voluptates, rem. Ex odio quibusdam nam veniam doloribus nihil voluptatum consequatur debitis officiis. Ab, similique dolorem?
       </p>
       <div class="d-flex flex-sm-row flex-column mt-4">
-        <button class="btn btn-danger btn-lg shadow"><i class="bi bi-envelope"></i> Email Me Here</button>
+        <button class="btn btn-danger btn-lg shadow"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#email"><i class="bi bi-envelope"></i> Email Me Here</button>
         <span class="fs-2 mt-5 mt-sm-0">
           <a href="#">
             <i class="bi bi-twitter ms-2 text-dark ms-sm-5"></i>
@@ -53,9 +56,100 @@
       </div> 
     </div>
   </div>
-  <div class="col-sm-6 text-center container">
-    <div class="card border-0">
-      <i class="bi bi-instagram text-danger display-2"></i>
+  <div class="col-sm-6 text-center container divo">
+    <div class="card divo border-0">
+      <i class="bi bi-instagram text-danger display-1"></i>
+      <h6 class="text-muted mt-4"><b> Check Out My</b></h6>
+      <h4 class="">
+        <a href="#" class="text-decoration-none insta" target="_blank">
+          insagram 
+        </a>
+          <i class="bi bi-arrow-right"></i>
+
+      </h4>
+    </div>
+  </div>
+
+  <div class="modal fade" id="email" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h4 class="text-danger">Book a Shoot</h4>
+          </div>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="row g-3">
+
+          <div class="col-md-6">
+            <label class="form-label">First Name</label>
+            <input class="form-control" placeholder="Abraham"></input>
+          </div>
+
+                    <div class="col-md-6">
+            <label class="form-label">Last Name</label>
+            <input class="form-control" placeholder="tadase"></input>
+          </div>
+          <div class="col-12">
+            <label class="form-control">Adress</label>
+            <input class="w-100" type="text" placeholder="1234 main str." >
+          </div>
+           <div class="col-12">
+            <label class="form-control">Adress 2</label>
+            <input class="w-100" type="text" placeholder="shoot location: apartment, studio of floor">
+          </div>
+          <div class="col-md-6">
+            
+              <label class="form-control">City</label>
+            <input class="form-control" type="text" placeholder="Yout City">
+          </div>
+          <span class="col-md-4">
+            <label class="form-label">State</label>
+            <select class="form-select">
+              <option selected>Choose....</option>
+              <option value="">State 1</option>
+              <option value="">State 2</option>
+              <option value="">State 3</option>
+            </select>
+          </span>
+          <div class="col-md-2">
+            <div class="form-label"> Zip</div>
+            <input class="form-control" type="text" placeholder="input zip">
+
+          </div>
+          <div class="col-12">
+            <a href="" class="text-link" role="button" data-bs-toggle="modal" data-bs-target="#terms&policy">Terms&policy</a>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input">
+              <label for="" class="form-check-label">I agree</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100 disabled">Send</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="terms&policy" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Terms of Policy</h5>
+          <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, vero quisquam dolorum aliquid voluptate at voluptatum obcaecati a sequi quasi suscipit. Asperiores temporibus molestias velit maxime aut eaque tempore dicta!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, perferendis adipisci nihil minus dignissimos deserunt illum eum repellat, dolorum ea labore vitae ad sequi cumque fuga earum, praesentium consequatur asperiores.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam non consequatur commodi tenetur eaque rerum labore vel error pariatur dolorum praesentium, at nisi repudiandae odit adipisci molestias iure laborum.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam molestiae nostrum voluptatem libero quod. Fugit voluptatum, facere aliquid, soluta nam molestiae veritatis aspernatur quibusdam perferendis autem temporibus ipsam error magnam.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" type="button" data-bs-dismiss="modal">close</button>
+        </div>
+      </div>
     </div>
   </div>
   </header>
